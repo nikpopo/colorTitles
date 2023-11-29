@@ -14,7 +14,7 @@ import java.util.Random;
 public class MainActivity extends AppCompatActivity {
     int darkColor;
     int brightColor;
-    View[][] tiles = new View[4][4];
+    ColorTileView[][] tiles = new ColorTileView[4][4];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,16 +27,15 @@ public class MainActivity extends AppCompatActivity {
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
                 String tileID = "t" + i + j;
-                @SuppressLint("DiscouragedApi") int resID = getResources().getIdentifier(tileID, "id", getPackageName());
+                int resID = getResources().getIdentifier(tileID, "id", getPackageName());
                 tiles[i][j] = findViewById(resID);
                 setRandomColor(tiles[i][j]);
             }
         }
     }
-
-    private void setRandomColor(View tile) {
+    private void setRandomColor(ColorTileView tile) {
         Random random = new Random();
-        int color = random.nextBoolean() ? darkColor : brightColor;
+        int color = random.nextBoolean() ? Color.BLUE : Color.CYAN;
         tile.setBackgroundColor(color);
     }
 
@@ -45,12 +44,7 @@ public class MainActivity extends AppCompatActivity {
         int x = Character.getNumericValue(tag.charAt(0));
         int y = Character.getNumericValue(tag.charAt(1));
 
-        changeColor(v);
-
-        for (int i = 0; i < 4; i++) {
-            changeColor(tiles[x][i]);
-            changeColor(tiles[i][y]);
-        }
+        toggleColor(x, y);
 
         int res = checkWin();
 
@@ -64,18 +58,24 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void changeColor(View v) {
-        int currentColor = ((ColorDrawable) v.getBackground()).getColor();
-        int newColor = (currentColor == darkColor) ? brightColor : darkColor;
-        v.setBackgroundColor(newColor);
+    private void toggleColor(int x, int y) {
+        tiles[x][y].toggleColor();
+        for (int i = 0; i < 4; i++) {
+            if (i != x) {
+                tiles[i][y].toggleColor();
+            }
+            if (i != y) {
+                tiles[x][i].toggleColor();
+            }
+        }
     }
 
     private int checkWin() {
-        int firstColor = ((ColorDrawable) tiles[0][0].getBackground()).getColor();
+        int firstColor = tiles[0][0].getBackgroundColor();
 
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
-                int currentColor = ((ColorDrawable) tiles[i][j].getBackground()).getColor();
+                int currentColor = tiles[i][j].getBackgroundColor();
                 if (currentColor != firstColor) {
                     return 0;
                 }
@@ -84,3 +84,4 @@ public class MainActivity extends AppCompatActivity {
         return firstColor;
     }
 }
+

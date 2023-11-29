@@ -24,7 +24,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
-                <View
+                <com.example.colortiles.ColorTileView
                         android:layout_margin="1dp"
                         android:id="@+id/t00"
                         android:tag="00"
@@ -33,7 +33,7 @@
                         android:onClick="onClick"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
-                <View
+                <com.example.colortiles.ColorTileView
                         android:layout_margin="1dp"
                         android:id="@+id/t01"
                         android:tag="01"
@@ -42,7 +42,7 @@
                         android:onClick="onClick"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
-                <View
+                <com.example.colortiles.ColorTileView
                         android:layout_margin="1dp"
                         android:id="@+id/t02"
                         android:tag="02"
@@ -51,7 +51,7 @@
                         android:onClick="onClick"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
-                <View
+                <com.example.colortiles.ColorTileView
                         android:layout_margin="1dp"
                         android:id="@+id/t03"
                         android:tag="03"
@@ -68,7 +68,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
-                <View
+                <com.example.colortiles.ColorTileView
                         android:layout_margin="1dp"
                         android:id="@+id/t10"
                         android:tag="10"
@@ -77,7 +77,7 @@
                         android:onClick="onClick"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
-                <View
+                <com.example.colortiles.ColorTileView
                         android:layout_margin="1dp"
                         android:id="@+id/t11"
                         android:tag="11"
@@ -86,7 +86,7 @@
                         android:onClick="onClick"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
-                <View
+                <com.example.colortiles.ColorTileView
                         android:layout_margin="1dp"
                         android:id="@+id/t12"
                         android:tag="12"
@@ -95,7 +95,7 @@
                         android:onClick="onClick"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
-                <View
+                <com.example.colortiles.ColorTileView
                         android:layout_margin="1dp"
                         android:id="@+id/t13"
                         android:tag="13"
@@ -111,7 +111,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
-                <View
+                <com.example.colortiles.ColorTileView
                         android:layout_margin="1dp"
                         android:id="@+id/t20"
                         android:tag="20"
@@ -120,7 +120,7 @@
                         android:onClick="onClick"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
-                <View
+                <com.example.colortiles.ColorTileView
                         android:layout_margin="1dp"
                         android:id="@+id/t21"
                         android:tag="21"
@@ -129,7 +129,7 @@
                         android:onClick="onClick"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
-                <View
+                <com.example.colortiles.ColorTileView
                         android:layout_margin="1dp"
                         android:id="@+id/t22"
                         android:tag="22"
@@ -138,7 +138,7 @@
                         android:onClick="onClick"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
-                <View
+                <com.example.colortiles.ColorTileView
                         android:layout_margin="1dp"
                         android:id="@+id/t23"
                         android:tag="23"
@@ -154,7 +154,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
-                <View
+                <com.example.colortiles.ColorTileView
                         android:layout_margin="1dp"
                         android:id="@+id/t30"
                         android:tag="30"
@@ -163,7 +163,7 @@
                         android:onClick="onClick"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
-                <View
+                <com.example.colortiles.ColorTileView
                         android:layout_margin="1dp"
                         android:id="@+id/t31"
                         android:tag="31"
@@ -172,7 +172,7 @@
                         android:onClick="onClick"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
-                <View
+                <com.example.colortiles.ColorTileView
                         android:layout_margin="1dp"
                         android:id="@+id/t32"
                         android:tag="32"
@@ -181,7 +181,7 @@
                         android:onClick="onClick"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
-                <View
+                <com.example.colortiles.ColorTileView
                         android:layout_margin="1dp"
                         android:id="@+id/t33"
                         android:tag="33"
