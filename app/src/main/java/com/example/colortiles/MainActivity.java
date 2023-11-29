@@ -50,10 +50,10 @@ public class MainActivity extends AppCompatActivity {
 
         if (res != 0) {
             String winningColor = String.format("#%06X", (0xFFFFFF & res));
-            if (winningColor.equals("#444444")) {
-                Toast.makeText(this, "Победа черных", Toast.LENGTH_SHORT).show();
+            if (winningColor.equals("#5DADE2")) {
+                Toast.makeText(this, "Победа синих", Toast.LENGTH_SHORT).show();
             } else {
-                Toast.makeText(this, "Победа белых", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Победа голубых", Toast.LENGTH_SHORT).show();
             }
         }
     }
