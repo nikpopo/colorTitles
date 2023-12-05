@@ -29,13 +29,12 @@ public class MainActivity extends AppCompatActivity {
         adapter = new ArrayAdapter<>(this, R.layout.item, names);
         lv.setAdapter(adapter);
 
-        // Sort the initial list
         Collections.sort(names);
 
         Button addButton = findViewById(R.id.addButton);
 
         addButton.setOnClickListener(view -> {
-            // Generate a random name and add it to the list
+
             String[] namesArray = getResources().getStringArray(R.array.names_array);
             String[] surnamesArray = getResources().getStringArray(R.array.surnames_array);
             Random rand = new Random();
@@ -43,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
             String randomSurname = surnamesArray[rand.nextInt(surnamesArray.length)];
             names.add(randomName + " " + randomSurname);
 
-            // Notify the adapter of the change
             adapter.notifyDataSetChanged();
         });
     }
