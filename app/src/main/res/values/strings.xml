@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">ColorTiles</string>
+    <string name="add_random_person">Добавить случайного человека</string>
+
+    <string-array name="names_array">
+        <item>Матвей</item>
+        <item>Анатолий</item>
+        <item>Владимир</item>
+        <item>Дмитрий</item>
+        <item>Никита</item>
+        <item>Андрей</item>
+        <item>Владислав</item>
+        <item>Геннадий</item>
+    </string-array>
+
+    <string-array name="surnames_array">
+        <item>Попов</item>
+        <item>Шевчук</item>
+        <item>Лесков</item>
+        <item>Ксенофонтов</item>
+        <item>Иванов</item>
+        <item>Москвитин</item>
+        <item>Волков</item>
+        <item>Харченко</item>
+    </string-array>
 </resources>
