@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Никита",
+    "phoneNumber": "+79501234567",
+    "sex": "MAN"
+  },
+  {
+    "name": "Марк",
+    "phoneNumber": "+79148495620",
+    "sex": "MAN"
+  },
+  {
+    "name": "Александр",
+    "phoneNumber": "+79141234567",
+    "sex": "UNKNOWN"
+  },
+  {
+    "name": "Екатерина",
+    "phoneNumber": "+79145098765",
+    "sex": "WOMAN"
+  },
+  {
+    "name": "Иван",
+    "phoneNumber": "+79509876543",
+    "sex": "MAN"
+  },
+  {
+    "name": "Светлана",
+    "phoneNumber": "+79501239876",
+    "sex": "WOMAN"
+  },
+  {
+    "name": "Михаил",
+    "phoneNumber": "+79641239876",
+    "sex": "MAN"
+  },
+  {
+    "name": "Татьяна",
+    "phoneNumber": "+79149876543",
+    "sex": "WOMAN"
+  },
+  {
+    "name": "Ольга",
+    "phoneNumber": "+79649871234",
+    "sex": "WOMAN"
+  },
+  {
+    "name": "Дмитрий",
+    "phoneNumber": "+79506482371",
+    "sex": "MAN"
+  }
+]
